@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Artifact_js_1 = require("./Artifact.js");
+var artifact_constants_js_1 = require("./artifact_constants.js");
+var flower = new Artifact_js_1.Artifact('flower', 'attack', 1, { hp: 1 });
+var feather = new Artifact_js_1.Artifact('feather', 'ur mom', 1, {});
+var cup = new Artifact_js_1.Artifact('cup', 'ur mom', 1, {});
+console.log(flower);
+console.log(feather);
+console.log(cup);
+console.log(artifact_constants_js_1.arti_consts);

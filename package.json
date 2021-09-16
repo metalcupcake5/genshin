@@ -1,0 +1,10 @@
+{
+  "name": "node-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "tsc index && node index"
+  },
+  "dependencies": {
+    "typescript": "^4.4.3"
+  }
+}
