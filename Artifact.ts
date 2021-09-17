@@ -41,8 +41,23 @@ export class Artifact {
         this.main_stat = 'atk';
         break;
       case 'cup':
-        throw new Error("Invalid main stat at cup");
-        console.log("hi");
+        if(!arti_consts.allowed_stats.cup.includes(main_stat)){
+          throw new Error("Invalid main stat at cup");
+				}
+        this.main_stat = main_stat
+        break;
+			case 'watch':
+        if(!arti_consts.allowed_stats.watch.includes(main_stat)){
+          throw new Error("Invalid main stat at watch");
+				}
+        this.main_stat = main_stat
+        break;
+			case 'circlet':
+        if(!arti_consts.allowed_stats.circlet.includes(main_stat)){
+          throw new Error("Invalid main stat at circlet");
+				}
+        this.main_stat = main_stat
+        break;
       default:
         this.main_stat = main_stat;
     }

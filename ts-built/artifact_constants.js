@@ -17,6 +17,7 @@ exports.arti_consts = {
             'electro_dmg',
         ],
         watch: ['atk_perc', 'hp_perc', 'def_prec', 'er', 'em'],
-        circlet: ['atk_perc', 'hp_perc', 'def_prec', 'crit_rate', 'crit_damage']
-    }
+        circlet: ['atk_perc', 'hp_perc', 'def_prec', 'crit_rate', 'crit_damage'],
+    },
 };
+//# sourceMappingURL=artifact_constants.js.map
