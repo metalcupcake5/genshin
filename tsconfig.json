@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
+    "target": "es6",
+    "lib": ["esnext", "dom"],
     "module": "commonjs",
-    "target": "ES6",
-    "outDir": "ts-built"
-  },
-  "include": [
-      "**/*"
-  ],
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react",
+    "allowJs": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+		"outDir": "ts-built",
+  }
 }
