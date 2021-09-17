@@ -42,6 +42,7 @@ export class Artifact {
         break;
       case 'cup':
         throw new Error("Invalid main stat at cup");
+        console.log("hi");
       default:
         this.main_stat = main_stat;
     }
