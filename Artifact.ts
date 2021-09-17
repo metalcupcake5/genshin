@@ -41,8 +41,10 @@ export class Artifact {
         this.main_stat = 'atk';
         break;
       case 'cup':
-        throw new Error("Invalid main stat at cup");
-        console.log("hi");
+        if(!arti_consts.allowed_stats.cup.includes(main_stat))  
+          throw new Error("Invalid main stat at cup");
+        this.main_stat = main_stat
+        break;
       default:
         this.main_stat = main_stat;
     }
