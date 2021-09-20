@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Artifact = void 0;
-const artifact_constants_js_1 = require("./artifact_constants.js");
 class Artifact {
     constructor(type, main_stat, main_stat_value, subs) {
         this.type = type;
@@ -13,6 +12,7 @@ class Artifact {
                 this.main_stat = 'atk';
                 break;
             case 'cup':
+<<<<<<< HEAD
                 if (!artifact_constants_js_1.arti_consts.allowed_stats.cup.includes(main_stat)) {
                     throw new Error("Invalid main stat at cup");
                 }
@@ -30,6 +30,10 @@ class Artifact {
                 }
                 this.main_stat = main_stat;
                 break;
+=======
+                throw new Error("Invalid main stat at cup");
+                console.log("hi");
+>>>>>>> origin/master
             default:
                 this.main_stat = main_stat;
         }
