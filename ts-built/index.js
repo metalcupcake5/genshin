@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Artifact_js_1 = require("./Artifact.js");
 <<<<<<< HEAD
+<<<<<<< HEAD
 const flower = new Artifact_js_1.Artifact('flower', 'attack', 1, { hp: 1 });
 const feather = new Artifact_js_1.Artifact('feather', 'ur mom', 1, {});
 const cup = new Artifact_js_1.Artifact('cup', 'geo_dmg', 1, {});
@@ -22,4 +23,14 @@ console.log(feather);
 console.log(cup);
 console.log(artifact_constants_js_1.arti_consts);
 >>>>>>> origin/master
+=======
+const artifact_constants_js_1 = require("./artifact_constants.js");
+const flower = new Artifact_js_1.Artifact('flower', 'attack', 1, { hp: 1 });
+const feather = new Artifact_js_1.Artifact('feather', 'ur mom', 1, {});
+const cup = new Artifact_js_1.Artifact('cup', 'ur mom', 1, {});
+console.log(flower);
+console.log(feather);
+console.log(cup);
+console.log(artifact_constants_js_1.arti_consts);
+>>>>>>> 80931dda4ab67d12de7d5e99006a109a7791ed53
 //# sourceMappingURL=index.js.map

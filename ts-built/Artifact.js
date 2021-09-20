@@ -13,6 +13,7 @@ class Artifact {
                 break;
             case 'cup':
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (!artifact_constants_js_1.arti_consts.allowed_stats.cup.includes(main_stat)) {
                     throw new Error("Invalid main stat at cup");
                 }
@@ -34,6 +35,10 @@ class Artifact {
                 throw new Error("Invalid main stat at cup");
                 console.log("hi");
 >>>>>>> origin/master
+=======
+                throw new Error("Invalid main stat at cup");
+                console.log("hi");
+>>>>>>> 80931dda4ab67d12de7d5e99006a109a7791ed53
             default:
                 this.main_stat = main_stat;
         }
