@@ -5,7 +5,7 @@ exports.arti_consts = {
     allowed_stats: {
         flower: ['hp'],
         feather: ['atk'],
-        goblet: [
+        cup: [
             'atk_perc',
             'hp_perc',
             'def_prec',
