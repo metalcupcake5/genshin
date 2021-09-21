@@ -21,6 +21,11 @@ console.log(feather);
 console.log(cup);
 console.log(watch);
 console.log(circlet);*/
+/*
+ * EDIT STUFF HERE
+ *
+*/
+// character's health
 const health = 30000;
 const atk = 1000;
 const e_level = 10;
@@ -32,7 +37,7 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
     const e_healing = Math.round((e_level_hp_scaling.hp_mult * health) + e_level_hp_scaling.hp_flat);
     console.log(`E healing: \n  ${e_healing} (per tick)\n  ${e_healing} * 6 = ${e_healing * 6} total (1 tick every 2 seconds over 12 seconds)`);
     const e_level_atk_scaling = kokomi_js_1.kokomi.e_scaling[e_level].dmg;
-    console.log(`E base damage(no buffs/resistance): ${Math.round(atk * e_level_atk_scaling)}`);
+    console.log(`E base damage(no buffs/resistance):\n  ${Math.round(atk * e_level_atk_scaling)}`);
 });
 main();
 //# sourceMappingURL=index.js.map
