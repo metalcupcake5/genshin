@@ -20,7 +20,9 @@ console.log(circlet);*/
 */
 // character's health
 const health = 30_000;
+// character's attack
 const atk = 1_000;
+// character e level
 const e_level = 10;
 
 const main = async () => {
@@ -31,9 +33,11 @@ const main = async () => {
 	const e_level_hp_scaling = kokomi.e_scaling[e_level];
 	const e_healing = Math.round((e_level_hp_scaling.hp_mult * health) + e_level_hp_scaling.hp_flat);
 
-	console.log(`E healing: \n  ${e_healing} (per tick)\n  ${e_healing} * 6 = ${e_healing * 6} total (1 tick every 2 seconds over 12 seconds)`);
+	console.log(`E healing: \n  ${e_healing} (per tick)\n  ${e_healing} * 7 = ${e_healing * 7} total (initial hit + tick every 2 seconds for 12 seconds)`);
 	const e_level_atk_scaling = kokomi.e_scaling[e_level].dmg;
-	console.log(`E base damage(no buffs/resistance):\n  ${Math.round(atk * e_level_atk_scaling)}`);
+	const e_damage = Math.round(atk * e_level_atk_scaling);
+	console.log(`E base damage(no buffs/resistance):\n  ${e_damage}(per tick)\n  ${e_damage} * 7 = ${e_damage * 7} total (7 ticks)`);
+	
 }
 
 main();
