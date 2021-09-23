@@ -26,11 +26,11 @@ console.log(circlet);*/
  *
 */
 // character's health
-const health = 30000;
+const health = 20000;
 // character's attack
 const atk = 1000;
 // character e level
-const e_level = 10;
+const e_level = 5;
 const main = () => __awaiter(void 0, void 0, void 0, function* () {
     console.log(`Health: ${health}`);
     console.log(`ATK: ${atk}`);

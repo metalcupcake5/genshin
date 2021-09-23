@@ -19,11 +19,11 @@ console.log(circlet);*/
  *
 */
 // character's health
-const health = 30_000;
+const health = 20_000;
 // character's attack
 const atk = 1_000;
 // character e level
-const e_level = 10;
+const e_level = 5;
 
 const main = async () => {
 	console.log(`Health: ${health}`);
